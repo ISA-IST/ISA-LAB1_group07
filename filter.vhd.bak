@@ -22,13 +22,6 @@ COMPONENT regnbit IS
 		 );
 END COMPONENT;
 
-
-COMPONENT ff IS
-PORT( CLK, RST_n, D, ENABLE : IN STD_LOGIC;
-		Q : OUT STD_LOGIC
-		);
-END COMPONENT;
-
 TYPE regtype IS ARRAY (0 to 9) OF SIGNED(11 downto 0);
 SIGNAL D_tmp: regtype;
 
@@ -62,7 +55,7 @@ y_tmp <= (M0(23)&M0) + (M1(23)&M1) + (M2(23)&M2) + (M3(23)&M3) + (M4(23)&M4) + (
 reg_out: PROCESS(CLK, RST_n)
 BEGIN	
 	IF (RST_n='0') THEN
-		DOUT <= (OTHERS=>'0');
+		DOUT <= OTHERS=>'0';
 	ELSIF (CLK'EVENT AND CLK='1') THEN	
 		IF (y_tmp(24)='0' AND y_tmp(23)='1') THEN
 			DOUT <= "011111111111";
@@ -74,8 +67,8 @@ BEGIN
 	END IF;
 END PROCESS;
 
-vout_reg1: ff PORT MAP (CLK=>CLK, ENABLE=>'1', RST_n=>RST_n, D=>VIN, Q=>VAL_tmp);
-vout_reg2: ff PORT MAP (CLK=>CLK, ENABLE=>'1', RST_n=>RST_n, D=>VAL_tmp, Q=>VOUT);
+vout_reg1: regnbit GENERIC MAP (N=>1) PORT MAP (CLK=>CLK, ENABLE=>'1', RST_n=>RST_n, D=>VIN, Q=>VAL_tmp);
+vout_reg2: regnbit GENERIC MAP (N=>1) PORT MAP (CLK=>CLK, ENABLE=>'1', RST_n=>RST_n, D=>VAL_tmp, Q=>VOUT);
 
 END beh;
 
