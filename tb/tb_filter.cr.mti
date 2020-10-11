@@ -1,0 +1,56 @@
+{C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1_git/ISA-LAB1/regnbit.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1_git/ISA-LAB1/regnbit.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity regnbit
+-- Compiling architecture behaviour of regnbit
+
+} {} {}} {C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1/tb/tb_fir.v} {1 {vlog -work work -stats=none {C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1/tb/tb_fir.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_fir
+
+Top level modules:
+	tb_fir
+
+} {} {}} {C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1_git/ISA-LAB1/ff.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1_git/ISA-LAB1/ff.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ff
+-- Compiling architecture behaviour of ff
+
+} {} {}} {C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1/tb/clk_gen.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1/tb/clk_gen.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity clk_gen
+-- Compiling architecture beh of clk_gen
+
+} {} {}} {C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1_git/ISA-LAB1/filter.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1_git/ISA-LAB1/filter.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity filter
+-- Compiling architecture beh of filter
+
+} {} {}} {C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1/tb/data_maker.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1/tb/data_maker.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package std_logic_textio
+-- Loading package NUMERIC_STD
+-- Compiling entity data_maker
+-- Compiling architecture beh of data_maker
+
+} {} {}}

@@ -1,0 +1,283 @@
+m255
+K3
+z0
+13
+cModel Technology
+dC:\altera\11.0sp1
+Eclk_gen
+Z0 w1602404516
+Z1 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 dC:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1/tb
+Z6 8C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1/tb/clk_gen.vhd
+Z7 FC:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1/tb/clk_gen.vhd
+l0
+L6
+V4bc`7UdH`BlHk=^=TDQ9H2
+!s100 JA8Ue1n4KCD]`nb]FQfQ[2
+Z8 OV;C;10.5b;63
+32
+Z9 !s110 1602405217
+!i10b 1
+Z10 !s108 1602405217.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1/tb/clk_gen.vhd|
+Z12 !s107 C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1/tb/clk_gen.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Abeh
+R1
+R2
+R3
+R4
+DEx4 work 7 clk_gen 0 22 4bc`7UdH`BlHk=^=TDQ9H2
+l19
+L13
+VdBQiMTcGMoC@`J@8JZl4?1
+!s100 G^OAm3OKA7iiHa=gPhmWW3
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Edata_maker
+Z15 w1602403957
+Z16 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z17 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R2
+R1
+R3
+R4
+R5
+Z18 8C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1/tb/data_maker.vhd
+Z19 FC:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1/tb/data_maker.vhd
+l0
+L11
+VU[oSP?;Q_BG^bG89>Cnea3
+!s100 69BoE]Z>256^A9^0JW10?0
+R8
+32
+Z20 !s110 1602405214
+!i10b 1
+Z21 !s108 1602405214.000000
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1/tb/data_maker.vhd|
+Z23 !s107 C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1/tb/data_maker.vhd|
+!i113 1
+R13
+R14
+Abeh
+R16
+R17
+R2
+R1
+R3
+R4
+DEx4 work 10 data_maker 0 22 U[oSP?;Q_BG^bG89>Cnea3
+l36
+L29
+VB9V;lU8Ce4V[@;8GIBWWS0
+!s100 B0Y8jRAIn3>@cKkbz9c4S0
+R8
+32
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 1
+R13
+R14
+Edata_sink
+Z24 w1602405476
+R17
+R1
+R2
+R3
+R4
+R5
+Z25 8C:\Users\daniela\Documents\Polito\Magistrale\Secondo Anno\Integrated System Architecture\LABS\lab1\tb\data_sink.vhd
+Z26 FC:\Users\daniela\Documents\Polito\Magistrale\Secondo Anno\Integrated System Architecture\LABS\lab1\tb\data_sink.vhd
+l0
+L10
+V:]Y0Od0;Uc8R6W=eHFKFM0
+!s100 jen7TI7[=ioVhNNj>[XMK1
+R8
+32
+Z27 !s110 1602405484
+!i10b 1
+Z28 !s108 1602405484.000000
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\daniela\Documents\Polito\Magistrale\Secondo Anno\Integrated System Architecture\LABS\lab1\tb\data_sink.vhd|
+Z30 !s107 C:\Users\daniela\Documents\Polito\Magistrale\Secondo Anno\Integrated System Architecture\LABS\lab1\tb\data_sink.vhd|
+!i113 1
+R13
+R14
+Abeh
+R17
+R1
+R2
+R3
+R4
+DEx4 work 9 data_sink 0 22 :]Y0Od0;Uc8R6W=eHFKFM0
+l20
+L18
+VMlB0zo9l8oV1dhI5c;A2@3
+!s100 R=kE2Oi<9ZGjCaSn9Y>jE2
+R8
+32
+R27
+!i10b 1
+R28
+R29
+R30
+!i113 1
+R13
+R14
+Eff
+Z31 w1602345534
+R3
+R4
+R5
+Z32 8C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1_git/ISA-LAB1/ff.vhd
+Z33 FC:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1_git/ISA-LAB1/ff.vhd
+l0
+L4
+VTMQRY]@SB1dhNVb^4JTIL3
+!s100 :zHmak<CRKZR=>F0j7^IO3
+R8
+32
+Z34 !s110 1602405216
+!i10b 1
+Z35 !s108 1602405216.000000
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1_git/ISA-LAB1/ff.vhd|
+Z37 !s107 C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1_git/ISA-LAB1/ff.vhd|
+!i113 1
+R13
+R14
+Abehaviour
+R3
+R4
+DEx4 work 2 ff 0 22 TMQRY]@SB1dhNVb^4JTIL3
+l11
+L10
+VHe4zCbY9[2J92TMj_c@i81
+!s100 3@RbT6U>64IbJJ^l`zWe=3
+R8
+32
+R34
+!i10b 1
+R35
+R36
+R37
+!i113 1
+R13
+R14
+Efilter
+R31
+R16
+R3
+R4
+R5
+Z38 8C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1_git/ISA-LAB1/filter.vhd
+Z39 FC:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1_git/ISA-LAB1/filter.vhd
+l0
+L5
+VP0G2O9[M^YCbi^M1eSBDc3
+!s100 T`^F_=mmbj0TbFKhiCgnQ3
+R8
+32
+R34
+!i10b 1
+R35
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1_git/ISA-LAB1/filter.vhd|
+Z41 !s107 C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1_git/ISA-LAB1/filter.vhd|
+!i113 1
+R13
+R14
+Abeh
+R16
+R3
+R4
+DEx4 work 6 filter 0 22 P0G2O9[M^YCbi^M1eSBDc3
+l40
+L14
+VJXSDUL60:jRe^Blc_bjfd1
+!s100 jF[ZLcXgDl<HENCXQX?2U3
+R8
+32
+R34
+!i10b 1
+R35
+R40
+R41
+!i113 1
+R13
+R14
+Eregnbit
+R31
+R16
+R3
+R4
+R5
+Z42 8C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1_git/ISA-LAB1/regnbit.vhd
+Z43 FC:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1_git/ISA-LAB1/regnbit.vhd
+l0
+L5
+VUoUbAGi?Lb^o@K0nRW_C03
+!s100 3E@Qj`Oa85cjVMA^D>zhg3
+R8
+32
+R9
+!i10b 1
+R35
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1_git/ISA-LAB1/regnbit.vhd|
+Z45 !s107 C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1_git/ISA-LAB1/regnbit.vhd|
+!i113 1
+R13
+R14
+Abehaviour
+R16
+R3
+R4
+DEx4 work 7 regnbit 0 22 UoUbAGi?Lb^o@K0nRW_C03
+l15
+L14
+VmMRKNFJfm4RfRBNaV`^540
+!s100 GK^1Hl9jXWbg>FC5eX^1d0
+R8
+32
+R9
+!i10b 1
+R35
+R44
+R45
+!i113 1
+R13
+R14
+vtb_fir
+R34
+!i10b 1
+!s100 UNQn:bQ?[681a<jOMGZXX1
+IQYT@3O0L2Ao<A_3g3@hG=3
+VDg1SIo80bB@j0V0VzS_@n1
+R5
+w1602404327
+8C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1/tb/tb_fir.v
+FC:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1/tb/tb_fir.v
+L0 3
+OV;L;10.5b;63
+r1
+!s85 0
+31
+Z46 !s108 1602405215.000000
+!s107 C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1/tb/tb_fir.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/daniela/Documents/Polito/Magistrale/Secondo Anno/Integrated System Architecture/LABS/lab1/tb/tb_fir.v|
+!i113 1
+o-work work
+tCvgOpt 0
