@@ -69,7 +69,7 @@ BEGIN
 		ELSIF (y_tmp(24)='1' AND y_tmp(23)='0') THEN
 			DOUT <= "100000000000";
 		ELSE
-			DOUT <= y_tmp(23 downto 11);
+			DOUT <= y_tmp(23 downto 12);
 		END IF;
 	END IF;
 END PROCESS;
