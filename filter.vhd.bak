@@ -63,17 +63,13 @@ reg_out: PROCESS(CLK, RST_n)
 BEGIN
 	IF (RST_n='0') THEN
 		DOUT <= (OTHERS=>'0');
-<<<<<<< HEAD
-	ELSIF (CLK'EVENT AND CLK='1') THEN	
-=======
 	ELSIF (CLK'EVENT AND CLK='1') THEN
->>>>>>> 2dbd21f2af770e91ef48f18c8d0520c64f619f77
 		IF (y_tmp(24)='0' AND y_tmp(23)='1') THEN
 			DOUT <= "011111111111";
 		ELSIF (y_tmp(24)='1' AND y_tmp(23)='0') THEN
 			DOUT <= "100000000000";
 		ELSE
-			DOUT <= y_tmp(23 downto 11);
+			DOUT <= y_tmp(22 downto 11);
 		END IF;
 	END IF;
 END PROCESS;
