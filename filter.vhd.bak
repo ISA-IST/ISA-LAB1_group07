@@ -34,7 +34,7 @@ SIGNAL D_tmp: regtype;
 
 SIGNAL M0, M1, M2, M3, M4, M5, M6, M7, M8: SIGNED(23 downto 0);
 
-SIGNAL y_tmp: SIGNED (24 downto 0); -- ricordare che la somma dei taps eccede la dinamica
+SIGNAL y_tmp: SIGNED (12 downto 0); -- ricordare che la somma dei taps eccede la dinamica
 SIGNAL VAL_tmp: STD_LOGIC;
 
 BEGIN
@@ -57,7 +57,7 @@ M6 <= B6*D_tmp(7);
 M7 <= B7*D_tmp(8);
 M8 <= B8*D_tmp(9);
 
-y_tmp <= (M0(23)&M0) + (M1(23)&M1) + (M2(23)&M2) + (M3(23)&M3) + (M4(23)&M4) + (M5(23)&M5) + (M6(23)&M6) + (M7(23)&M7) + (M8(23)&M8);
+y_tmp <= (M0(23 downto 11)) + (M1(23 downto 11)) + (M2(23 downto 11)) + (M3(23 downto 11)) + (M4(23 downto 11)) + (M5(23 downto 11)) + (M6(23 downto 11)) + (M7(23 downto 11)) + (M8(23 downto 11));
 
 reg_out: PROCESS(CLK, RST_n)
 BEGIN
@@ -69,7 +69,7 @@ BEGIN
 		ELSIF (y_tmp(24)='1' AND y_tmp(23)='0') THEN
 			DOUT <= "100000000000";
 		ELSE
-			DOUT <= y_tmp(23 downto 11);
+			DOUT <= y_tmp(23 downto 12);
 		END IF;
 	END IF;
 END PROCESS;
