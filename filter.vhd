@@ -29,12 +29,15 @@ PORT( CLK, RST_n, D, ENABLE : IN STD_LOGIC;
 		);
 END COMPONENT;
 
+TYPE partype IS ARRAY (0 to 4) OF SIGNED(11 downto 0);
 TYPE regtype IS ARRAY (0 to 9) OF SIGNED(11 downto 0);
+
 SIGNAL D_tmp: regtype;
+SIGNAL D_part: partype;
 
 SIGNAL M0, M1, M2, M3, M4, M5, M6, M7, M8: SIGNED(23 downto 0);
 
-SIGNAL y_tmp: SIGNED (24 downto 0); -- ricordare che la somma dei taps eccede la dinamica
+SIGNAL y_tmp: SIGNED (23 downto 0); -- ricordare che la somma dei taps eccede la dinamica
 SIGNAL VAL_tmp: STD_LOGIC;
 
 BEGIN
@@ -47,17 +50,22 @@ sh_reg: FOR i in 0 to 8 GENERATE
 END GENERATE;
 
 --samples multiplied by coefficients b
-M0 <= B0*D_tmp(1);
-M1 <= B1*D_tmp(2);
-M2 <= B2*D_tmp(3);
-M3 <= B3*D_tmp(4);
-M4 <= B4*D_tmp(5);
-M5 <= B5*D_tmp(6);
-M6 <= B6*D_tmp(7);
-M7 <= B7*D_tmp(8);
-M8 <= B8*D_tmp(9);
+--M0 <= B0*D_tmp(1);
+--M1 <= B1*D_tmp(2);
+--M2 <= B2*D_tmp(3);
+--M3 <= B3*D_tmp(4);
+--M4 <= B4*D_tmp(5);
+--M5 <= B5*D_tmp(6);
+--M6 <= B6*D_tmp(7);
+--M7 <= B7*D_tmp(8);
+--M8 <= B8*D_tmp(9);
+partype(0)<=D_tmp(1)+D_tmp(9);
+partype(1)<=D_tmp(2)+D_tmp(8); 
+partype(2)<=D_tmp(3)+D_tmp(7);
+partype(3)<=D_tmp(4)+D_tmp(6);
+partype(4)<=D_tmp(5);
 
-y_tmp <= (M0(23)&M0) + (M1(23)&M1) + (M2(23)&M2) + (M3(23)&M3) + (M4(23)&M4) + (M5(23)&M5) + (M6(23)&M6) + (M7(23)&M7) + (M8(23)&M8);
+y_tmp <= (partype(0)*B0) + (partype(1)*B1) + (partype(2)*B2) + (partype(3)*B3) + (partype(4)*B4);
 
 reg_out: PROCESS(CLK, RST_n)
 BEGIN
