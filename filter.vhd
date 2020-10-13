@@ -59,22 +59,22 @@ END GENERATE;
 --M6 <= B6*D_tmp(7);
 --M7 <= B7*D_tmp(8);
 --M8 <= B8*D_tmp(9);
-partype(0)<=D_tmp(1)+D_tmp(9);
-partype(1)<=D_tmp(2)+D_tmp(8); 
-partype(2)<=D_tmp(3)+D_tmp(7);
-partype(3)<=D_tmp(4)+D_tmp(6);
-partype(4)<=D_tmp(5);
+D_part(0)<=(D_tmp(1)+D_tmp(9));
+D_part(1)<=D_tmp(2)+D_tmp(8); 
+D_part(2)<=D_tmp(3)+D_tmp(7);
+D_part(3)<=D_tmp(4)+D_tmp(6);
+D_part(4)<=D_tmp(5);
 
-y_tmp <= (partype(0)*B0) + (partype(1)*B1) + (partype(2)*B2) + (partype(3)*B3) + (partype(4)*B4);
+y_tmp <= (D_part(0)*B0) + (D_part(1)*B1) + (D_part(2)*B2) + (D_part(3)*B3) + (D_part(4)*B4);
 
 reg_out: PROCESS(CLK, RST_n)
 BEGIN
 	IF (RST_n='0') THEN
 		DOUT <= (OTHERS=>'0');
 	ELSIF (CLK'EVENT AND CLK='1') THEN
-		IF (y_tmp(24)='0' AND y_tmp(23)='1') THEN
+		IF (y_tmp(23)='0' AND y_tmp(22)='1') THEN
 			DOUT <= "011111111111";
-		ELSIF (y_tmp(24)='1' AND y_tmp(23)='0') THEN
+		ELSIF (y_tmp(23)='1' AND y_tmp(22)='0') THEN
 			DOUT <= "100000000000";
 		ELSE
 			DOUT <= y_tmp(22 downto 11); -- questione prodotto tra numeri Q1.X -> Q2.2X
