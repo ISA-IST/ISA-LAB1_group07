@@ -29,7 +29,7 @@ PORT( CLK, RST_n, D, ENABLE : IN STD_LOGIC;
 		);
 END COMPONENT;
 
-TYPE regtype IS ARRAY (0 to 9) OF SIGNED(11 downto 0);
+TYPE regtype IS ARRAY (0 to 9) OF SIGNED(11 downto 0);  --signals used to connect the shift registers
 SIGNAL D_tmp: regtype;
 
 SIGNAL M0, M1, M2, M3, M4, M5, M6, M7, M8: SIGNED(23 downto 0);
