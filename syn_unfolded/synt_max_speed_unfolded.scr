@@ -1,0 +1,19 @@
+set power_preserve_rtl_hier_names true
+analyze -f vhdl -lib  WORK ../src_unfolded/filter_unfolded_pipe.vhd
+analyze -f vhdl -lib  WORK ../src_unfolded/ff.vhd
+analyze -f vhdl -lib  WORK ../src_unfolded/regnbit.vhd
+elaborate filter_unfolded_pipe -arch beh -lib WORK > ./elaborate_max_speed_unfolded_pipe.txt
+uniquify
+link
+create_clock -name  MY_CLK -period 1.65 CLK
+set_dont_touch_network MY_CLK
+set_clock_uncertainty 0.07 [get_clocks MY_CLK]
+set_input_delay  0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] CLK]
+set_output_delay  0.5 -max -clock MY_CLK [all_outputs]
+set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
+set_load $OLOAD [all_outputs]
+compile
+check_design
+report_timing > timing_max_speed_unfolded_pipe.txt
+report_area > area_max_speed_unfolded_pipe.txt
+

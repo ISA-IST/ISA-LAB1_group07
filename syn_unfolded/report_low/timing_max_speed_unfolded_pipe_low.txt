@@ -1,0 +1,68 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : filter_unfolded_pipe
+Version: O-2018.06-SP4
+Date   : Sun Nov  8 19:51:45 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: B2[11] (input port clocked by MY_CLK)
+  Endpoint: reg_M2_0/Q_reg[11]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  filter_unfolded_pipe
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 f
+  B2[11] (in)                                             0.00       0.50 f
+  mult_83/a[11] (filter_unfolded_pipe_DW_mult_tc_38)      0.00       0.50 f
+  mult_83/U709/ZN (XNOR2_X1)                              0.08       0.58 f
+  mult_83/U756/ZN (OAI22_X1)                              0.06       0.64 r
+  mult_83/U575/ZN (INV_X1)                                0.03       0.67 f
+  mult_83/U145/CO (FA_X1)                                 0.09       0.76 f
+  mult_83/U139/S (FA_X1)                                  0.14       0.90 r
+  mult_83/U138/S (FA_X1)                                  0.12       1.02 f
+  mult_83/U445/ZN (NOR2_X1)                               0.05       1.07 r
+  mult_83/U482/ZN (OAI21_X1)                              0.03       1.10 f
+  mult_83/U715/ZN (AOI21_X1)                              0.05       1.15 r
+  mult_83/U761/ZN (OAI21_X1)                              0.04       1.19 f
+  mult_83/U464/ZN (AOI21_X1)                              0.04       1.23 r
+  mult_83/U764/ZN (OAI21_X1)                              0.03       1.26 f
+  mult_83/U5/CO (FA_X1)                                   0.09       1.35 f
+  mult_83/U4/S (FA_X1)                                    0.10       1.45 f
+  mult_83/product[22] (filter_unfolded_pipe_DW_mult_tc_38)
+                                                          0.00       1.45 f
+  reg_M2_0/D[11] (regnbit_N13_33)                         0.00       1.45 f
+  reg_M2_0/U21/Z (MUX2_X1)                                0.07       1.52 f
+  reg_M2_0/Q_reg[11]/D (DFFR_X1)                          0.01       1.53 f
+  data arrival time                                                  1.53
+
+  clock MY_CLK (rise edge)                                1.64       1.64
+  clock network delay (ideal)                             0.00       1.64
+  clock uncertainty                                      -0.07       1.57
+  reg_M2_0/Q_reg[11]/CK (DFFR_X1)                         0.00       1.57 r
+  library setup time                                     -0.04       1.53
+  data required time                                                 1.53
+  --------------------------------------------------------------------------
+  data required time                                                 1.53
+  data arrival time                                                 -1.53
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

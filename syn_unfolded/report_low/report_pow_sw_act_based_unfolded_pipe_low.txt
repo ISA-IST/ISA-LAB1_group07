@@ -1,0 +1,57 @@
+Information: Updating design information... (UID-85)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: The derived static probability value (0.500000) for the clock net 'CLK' conflicts with the annotated value (0.496855). Using the annotated value. (PWR-12)
+Warning: The derived toggle rate value (0.304878) for the clock net 'CLK' conflicts with the annotated value (0.200000). Using the annotated value. (PWR-12)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : filter_unfolded_pipe
+Version: O-2018.06-SP4
+Date   : Mon Nov  9 11:10:48 2020
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+filter_unfolded_pipe   5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   1.4868 mW   (63%)
+  Net Switching Power  = 880.1455 uW   (37%)
+                         ---------
+Total Dynamic Power    =   2.3669 mW  (100%)
+
+Cell Leakage Power     = 422.3744 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register         529.8607          218.6224        5.6348e+04          804.8327  (  28.85%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational    956.9363          661.5243        3.6603e+05        1.9845e+03  (  71.15%)
+--------------------------------------------------------------------------------------------------
+Total          1.4868e+03 uW       880.1467 uW     4.2237e+05 nW     2.7893e+03 uW
+1

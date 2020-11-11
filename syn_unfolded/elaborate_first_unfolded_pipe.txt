@@ -1,0 +1,67 @@
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine filter_unfolded line 226 in file
+		'../src_unfolded/filter_unfolded_pipe.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     DOUT_0_reg      | Flip-flop |  12   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine filter_unfolded line 244 in file
+		'../src_unfolded/filter_unfolded_pipe.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     DOUT_1_reg      | Flip-flop |  12   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine filter_unfolded line 262 in file
+		'../src_unfolded/filter_unfolded_pipe.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     DOUT_2_reg      | Flip-flop |  12   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'filter_unfolded'.
+Information: Building the design 'regnbit' instantiated from design 'filter_unfolded' with
+	the parameters "N=12". (HDL-193)
+
+Inferred memory devices in process
+	in routine regnbit_N12 line 17 in file
+		'../src_unfolded/regnbit.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  12   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'regnbit' instantiated from design 'filter_unfolded' with
+	the parameters "N=13". (HDL-193)
+
+Inferred memory devices in process
+	in routine regnbit_N13 line 17 in file
+		'../src_unfolded/regnbit.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  13   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ff'. (HDL-193)
+
+Inferred memory devices in process
+	in routine ff line 13 in file
+		'../src_unfolded/ff.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+1

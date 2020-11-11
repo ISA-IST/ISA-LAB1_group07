@@ -1,0 +1,5 @@
+read_verilog -netlist ../netlist/myfir_unfolded_pipe_low.v
+read_saif -input ../saif/myfir_syn_unfolded_pipe_low.saif -instance tb_fir/UUT -unit ns -scale 1
+create_clock -name "MY_CLK" CLK
+
+report_power > report_pow_sw_act_based_without_clk_unfolded_pipe_low.txt

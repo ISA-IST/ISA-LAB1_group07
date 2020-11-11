@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : filter_unfolded_pipe
+Version: O-2018.06-SP4
+Date   : Sat Oct 24 10:29:03 2020
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db)
+
+Number of ports:                         4444
+Number of nets:                         20379
+Number of cells:                        14193
+Number of combinational cells:          13127
+Number of sequential cells:               915
+Number of macros/black boxes:               0
+Number of buf/inv:                       1876
+Number of references:                     134
+
+Combinational area:              19688.788026
+Buf/Inv area:                     1143.533997
+Noncombinational area:            4868.864157
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 24557.652183
+Total area:                 undefined
+1

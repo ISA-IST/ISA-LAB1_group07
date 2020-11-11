@@ -1,0 +1,69 @@
+Information: Updating design information... (UID-85)
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : filter_unfolded_pipe
+Version: O-2018.06-SP4
+Date   : Sun Nov  8 19:24:56 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: B8[11] (input port clocked by MY_CLK)
+  Endpoint: reg_M8_1/Q_reg[10]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  filter_unfolded_pipe
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 f
+  B8[11] (in)                                             0.00       0.50 f
+  mult_99/a[11] (filter_unfolded_pipe_DW_mult_tc_49)      0.00       0.50 f
+  mult_99/U801/ZN (XNOR2_X1)                              0.08       0.58 f
+  mult_99/U670/ZN (OAI22_X1)                              0.06       0.64 r
+  mult_99/U669/ZN (INV_X1)                                0.03       0.67 f
+  mult_99/U638/ZN (OR2_X1)                                0.06       0.73 f
+  mult_99/U206/CO (FA_X1)                                 0.09       0.82 f
+  mult_99/U201/CO (FA_X1)                                 0.11       0.93 f
+  mult_99/U196/S (FA_X1)                                  0.13       1.06 f
+  mult_99/U495/ZN (NOR2_X2)                               0.06       1.12 r
+  mult_99/U527/ZN (OAI21_X1)                              0.05       1.17 f
+  mult_99/U761/ZN (AOI21_X1)                              0.06       1.23 r
+  mult_99/U525/ZN (OAI21_X1)                              0.05       1.28 f
+  mult_99/U838/ZN (AOI21_X1)                              0.05       1.33 r
+  mult_99/U509/ZN (XNOR2_X1)                              0.06       1.38 r
+  mult_99/product[21] (filter_unfolded_pipe_DW_mult_tc_49)
+                                                          0.00       1.38 r
+  reg_M8_1/D[10] (regnbit_N13_18)                         0.00       1.38 r
+  reg_M8_1/U25/ZN (NAND2_X1)                              0.03       1.41 f
+  reg_M8_1/U26/ZN (OAI21_X1)                              0.03       1.45 r
+  reg_M8_1/Q_reg[10]/D (DFFR_X1)                          0.01       1.45 r
+  data arrival time                                                  1.45
+
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                      -0.07      -0.07
+  reg_M8_1/Q_reg[10]/CK (DFFR_X1)                         0.00      -0.07 r
+  library setup time                                     -0.04      -0.11
+  data required time                                                -0.11
+  --------------------------------------------------------------------------
+  data required time                                                -0.11
+  data arrival time                                                 -1.45
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -1.56
+
+
+1
