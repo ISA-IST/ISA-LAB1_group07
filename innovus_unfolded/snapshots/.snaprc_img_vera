@@ -1,0 +1,21 @@
+#----------------------------------------------------------
+# snaps_veri/.snaprc_img_vera : snapshot resource file                          
+# label = img_vera                                      
+#----------------------------------------------------------
+set tmpstr ""
+set tmpbar ""
+lappend tmpstr "dir" $sdir
+lappend tmpstr "label" img_vera
+lappend tmpstr "fplan" $sdir/ss_img_vera.fplan.gif
+lappend tmpstr "amoeba" $sdir/ss_img_vera.amoeba.gif
+lappend tmpstr "place" $sdir/ss_img_vera.place.gif
+lappend tmpstr "trgGlbOverflowPctH" 0
+lappend tmpstr "trgGlbOverflowPctV" 0
+lappend tmpbar "Congestion"
+lappend tmpstr "Congestion" 0
+lappend tmpbar WNS
+lappend tmpstr WNS 3.94
+lappend tmpbar TNS
+lappend tmpstr TNS 0.0
+lappend tmpbar Overlap
+lappend tmpstr Overlap 0

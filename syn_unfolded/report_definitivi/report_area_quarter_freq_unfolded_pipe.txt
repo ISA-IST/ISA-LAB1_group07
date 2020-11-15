@@ -1,7 +1,7 @@
  
 ****************************************
 Report : area
-Design : filter_unfolded
+Design : filter_unfolded_pipe
 Version: O-2018.06-SP4
 Date   : Sat Oct 24 10:46:06 2020
 ****************************************
